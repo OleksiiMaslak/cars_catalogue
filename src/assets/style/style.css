@@ -1,0 +1,16 @@
+body {
+    background-color: #06092eec;
+    color: #fff;
+}
+h1 {
+    background-color: rgba(50, 50, 160, 0.932);
+    border: 1px solid slateblue ;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 15px auto;
+}
