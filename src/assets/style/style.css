@@ -11,6 +11,7 @@ body {
     padding: 0 20px;
 
 }
+
 h1 {
     background-color: rgba(50, 50, 160, 0.932);
     border: 1px solid slateblue ;
@@ -24,6 +25,24 @@ h1 {
     margin: 15px auto;
     font-family: 'Roboto', sans-serif;
 }
+
 p{
     margin-bottom: 10px;
+}
+
+.btn{
+    display: block;
+    padding: 5px 30px;
+    margin: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    border-radius: 5px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(21, 1, 43);
+    color: #fff;
+    border: 1px solid #fff;
 }

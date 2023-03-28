@@ -8,7 +8,7 @@ export const cars = [
     {
         id: 2,
         name: "Rolls-Royce (Cyberpunk)",
-        price: 2474970,
+        price: 247497,
         image: '/images/car2.jpg'
     },
     {
