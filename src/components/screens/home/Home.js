@@ -1,12 +1,24 @@
 // import styles  from './Home.module.css';
-import {cars as carsData} from "./cars.data"
+// import {cars as carsData} from "./cars.data"
+// import {useMemo} from "react";
 import CarItem from './car-item/CarItem';
-import { useMemo, useState } from "react";
-import CreateCarForm from './car-item/create-car-form/CreateCarForm'
+import { useEffect, useState } from "react";
+import CreateCarForm from './car-item/create-car-form/CreateCarForm';
+import { CarService } from "../../../services/car-service";
   
 function Home() {
   // const filteredCars = useMemo(() => cars.filter(car => car.price > 100000), [])
-  const [cars, setCars] = useState(carsData)
+  const [cars, setCars] = useState([]);
+
+  useEffect(() => {
+    // Это просто заготовка для работы с сервером
+    const fetchData = async () => {
+      const response = await CarService;
+      setCars(response.getAll())
+    }
+    fetchData()
+  }, [])
+
   return (
     <div>
       <div className="catalogue">
