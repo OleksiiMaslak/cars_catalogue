@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { cars } from '../../cars.data';
+// import { cars } from '../../cars.data';
 import styles from './CreateCarForm.module.css'
 
 const clearData = {
